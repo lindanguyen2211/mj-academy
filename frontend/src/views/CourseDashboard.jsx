@@ -1,5 +1,5 @@
 import React from 'react'
-import 'CourseDashboard.css'
+import './CourseDashboard.css'
 
 const CourseDashboard = () => {
   return (
