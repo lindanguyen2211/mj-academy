@@ -10,6 +10,13 @@ const CourseCard = ({ title, description, img, progress }) => {
             <p>
                 {description}
             </p>
+            <button>
+              {
+                progress == 100 ? 'Completed' 
+                  : (progress > 0 ? 'In-Progress' 
+                  : 'Start')
+              }
+            </button>
         </div>
     </div>
   )
