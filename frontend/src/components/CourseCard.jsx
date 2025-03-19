@@ -1,7 +1,7 @@
 import React from 'react'
 import './CourseCard.css'
 
-const CourseCard = ({ title, description, img }) => {
+const CourseCard = ({ title, description, img, progress }) => {
   return (
     <div className='course-card'>
         <img src={img} alt={`image thumbnail for ${title}`} className='course-card__left'/>
