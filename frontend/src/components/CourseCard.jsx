@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './CourseCard.css'
 import ProgressBar from './ProgressBar'
 
@@ -15,11 +16,14 @@ const CourseCard = ({ title, description, img, progress }) => {
           </div>
           <div className="bottom">
             <button>
+              {/* !change link dynamic pages based on course id, placeholder routes to same course for now */}
+              <Link to='/courses'>
               {
                 progress == 100 ? 'Completed' 
-                  : (progress > 0 ? 'In-Progress' 
+                : (progress > 0 ? 'In-Progress' 
                   : 'Start')
-              }
+                }
+              </Link>
             </button>
             <ProgressBar progress={progress}/>
           </div>
