@@ -86,6 +86,20 @@
     margin-right: 3rem;
     font-size: 1.25rem;
     list-style-type: none;
+    color: #797979;
+}
+
+.courses__nav .active {
+    color: black;
+    font-weight: 700;
+    border-bottom: 5px #C20814 solid;
+}
+
+.search-bar {
+    padding: .5rem 2rem;
+    color: #7e7e7e;
+    border: 2px solid #F4F4F4;
+    border-radius: 20px;
 }
 
 .main__article {
