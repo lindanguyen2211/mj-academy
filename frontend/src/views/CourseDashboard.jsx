@@ -28,7 +28,7 @@ const CourseDashboard = () => {
         <p className="lesson">4.1 Import Jaw Motion to EXOCAD</p>
         <p className="lesson">4.2 Import Jaw Motion to 3SHAPE</p>
       </aside>
-      <section>
+      <section className='main'>
         <header>
           <img src={profile} alt="profile picture" className="profile-picture" />
           <div>

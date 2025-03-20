@@ -30,3 +30,44 @@
 .lesson {
     margin-left: 1rem;
 }
+
+#courses .main {
+    flex-grow: 1;
+}
+
+#courses header {
+    padding: 3rem;
+    background-color: #C20814;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-picture {
+    border: 5px white solid;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+}
+
+.welcome-message {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.progress {
+    display: flex;
+}
+
+.progress img {
+    margin-right:1rem;
+}
+
+#courses button {
+    background-color: white;
+    color: #C20814;
+    border: none;
+    border-radius: 50px;
+    padding: 2rem;
+}
