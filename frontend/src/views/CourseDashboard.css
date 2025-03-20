@@ -72,3 +72,35 @@
     border-radius: 50px;
     padding: 2rem;
 }
+
+.main__section {
+    padding: 2rem;
+}
+
+.courses__nav , .courses__nav ul{
+    color: black;
+    display: flex;
+}
+
+.courses__nav li {
+    margin-right: 3rem;
+    font-size: 1.25rem;
+    list-style-type: none;
+}
+
+.main__article {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #F4F4F4;
+    color: black;
+}
+
+.main__article h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.main__article p {
+    margin-bottom: 1rem;
+}
+
