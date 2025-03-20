@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 const CourseDashboard = () => {
   const logo = new URL("../assets/images/MODJAW_Logo.png", import.meta.url).href
+  const profile = new URL("../assets/images/profile-picture.png", import.meta.url).href
+  const icon = new URL("../assets/images/pc-icon.png", import.meta.url).href
 
   return (
     <section id='courses'>
@@ -26,6 +28,19 @@ const CourseDashboard = () => {
         <p className="lesson">4.1 Import Jaw Motion to EXOCAD</p>
         <p className="lesson">4.2 Import Jaw Motion to 3SHAPE</p>
       </aside>
+      <section>
+        <header>
+          <img src={profile} alt="profile picture" className="profile-picture" />
+          <div>
+            <p className='welcome-message'>WELCOME BACK, TAYLOR</p>
+            <div className="progress">
+              <img src={icon} alt="icon of a computer" className='pc-icon'/>
+              <p>100% COMPLETE</p>
+            </div>
+          </div>
+          <button>BEGIN COURSE</button>
+        </header>
+      </section>
     </section>
   )
 }
