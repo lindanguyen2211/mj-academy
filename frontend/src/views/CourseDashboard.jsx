@@ -26,12 +26,14 @@ const CourseDashboard = () => {
       <Sidebar data={data}/>
       <section className='main'>
         <header>
-          <img src={profile} alt="profile picture" className="profile-picture" />
-          <div>
-            <p className='welcome-message'>WELCOME BACK, TAYLOR</p>
-            <div className="progress">
-              <img src={icon} alt="icon of a computer" className='pc-icon'/>
-              <p>100% COMPLETE</p>
+          <div className='profile'>
+            <img src={profile} alt="profile picture" className="profile-picture" />
+            <div>
+              <p className='welcome-message'>WELCOME BACK, TAYLOR</p>
+              <div className="progress">
+                <img src={icon} alt="icon of a computer" className='pc-icon'/>
+                <p>100% COMPLETE</p>
+              </div>
             </div>
           </div>
           <button>BEGIN COURSE</button>

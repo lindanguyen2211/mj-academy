@@ -17,6 +17,12 @@
     align-items: center;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .profile-picture {
     border: 5px white solid;
     border-radius: 50%;
