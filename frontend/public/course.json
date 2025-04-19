@@ -1,71 +1,91 @@
 [
     {
-        "chapter": 1,
-        "title": "Introduction to TWIM",
-        "lessons": [
-            {
-                "title": "What is 4D Dentistry?",
-                "status": true
-            },
-            {
-                "title": "Key Features",
-                "status": true
-            },
-            {
-                "title": "Create New Patient Profile",
-                "status": false
-            },
-            {
-                "title": "Uploading IOS, Face Scans and CBCT", 
-                "status": false
+        "id": "course-1",
+        "overview": "This course is designed to provide dental professionals with a comprehensive understanding of TWIM™ software and its integration into modern digital dentistry. By mastering TWIM™, participants will enhance their diagnostic precision, improve treatment planning, and elevate patient communication using 4D dynamic data.",
+        "learningObjectives": "Participants will learn the fundamentals of TWIM™ software and its role in 4D Dentistry™. They will gain the skills to navigate the TWIM™ interface efficiently, ensuring they can operate the software with ease. The course will teach how to import and manage patient data securely, allowing practitioners to maintain organized records. Attendees will also learn to capture and analyze real-time jaw motion data, improving diagnosis and treatment planning. They will explore TWIM™ features such as dynamic contact analysis and mandibular sequence tracking to optimize clinical outcomes. Additionally, participants will understand how to export 4D motion data for seamless collaboration with dental labs. Lastly, the course will cover how to leverage TWIMFIT™ services for personalized treatment designs, improving patient outcomes and enhancing clinical efficiency.",
+        "assessmentDetails": "To ensure participants have successfully grasped the concepts and practical applications of TWIM™ software, this course concludes with a comprehensive assessment that includes a knowledge check quiz featuring multiple-choice and scenario-based questions to assess comprehension, along with a practical evaluation where participants demonstrate their ability to import data, analyze jaw motion, and export dynamic data for lab collaboration.",
+        "chapters": 
+        [
+            {       
+                "chapter": 1,
+                "title": "Introduction to TWIM",
+                "lessons": 
+                [
+                    {
+                        "title": "What is 4D Dentistry?",
+                        "status": true,
+                        "slug": "what-is-4d-dentistry"
+                    },
+                    {
+                        "title": "Key Features",
+                        "status": true,
+                        "slug": "key-features"
+                    },
+                    {
+                        "title": "Create New Patient Profile",
+                        "status": false,
+                        "slug": "create-new-patient-profile"
+                    },
+                    {
+                        "title": "Uploading IOS, Face Scans and CBCT", 
+                        "status": false,
+                        "slug": "uploading-ios-scans-cbct"
+                    }
+                ]
+            }
+            ,{
+                "chapter": 2,
+                "title": "Capture Jaw Motion",
+                "lessons": [
+                    {
+                        "title": "Tips and Tricks", 
+                        "status": false,
+                        "slug": "capture-jaw-motion"
+                    },
+                    {
+                        "title": "Importance of Proper Point Picking", 
+                        "status": false,
+                        "slug": "importance-of-proper-pointing-picking"
+                    }
+                ]
+            }
+            ,{
+                "chapter": 3,
+                "title": "Reviewing the Data",
+                "lessons": [
+                    {
+                        "title": "Why is recording speech important?", 
+                        "status": false,
+                        "slug": "recording-speech"
+                    },
+                    {
+                        "title": "How to read Axio Graphs", 
+                        "status": false,
+                        "slug": "axio-graphs"
+                    },
+                    {
+                        "title": "How to Crop Motion Data", 
+                        "status": false,
+                        "slug": "cropping-motion-data"
+                    }
+                ]
+            }
+            ,{
+                "chapter": 4,
+                "title": "Importing to CAD Software",
+                "lessons": [
+                    {
+                        "title": "Importing Jaw Motion to EXOCAD", 
+                        "status": false,
+                        "slug": "importing-to-exocad"
+                    },
+                    {
+                        "title": "Importing Jaw Motion to 3Shape", 
+                        "status": false,
+                        "slug": "importing-to-3shape"
+                    }
+                ]
             }
         ]
     }
-    ,{
-        "chapter": 2,
-        "title": "Capture Jaw Motion",
-        "lessons": [
-            {
-                "title": "Tips and Tricks", 
-                "status": false
-            },
-            {
-                "title": "Importance of Proper Point Picking", 
-                "status": false
-            }
-        ]
-    }
-    ,{
-        "chapter": 3,
-        "title": "Reviewing the Data",
-        "lessons": [
-            {
-                "title": "Why is recording speech important?", 
-                "status": false
-            },
-            {
-                "title": "How to read Axio Graphs", 
-                "status": false
-            },
-            {
-                "title": "How to Crop Motion Data", 
-                "status": false
-            }
-        ]
-    }
-    ,{
-        "chapter": 4,
-        "title": "Importing to CAD Software",
-        "lessons": [
-            {
-                "title": "Importing Jaw Motion to EXOCAD", 
-                "status": false
-            },
-            {
-                "title": "Importing Jaw Motion to 3Shape", 
-                "status": false
-            }
-        ]
-    }
-
 ]

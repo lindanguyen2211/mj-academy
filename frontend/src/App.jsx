@@ -6,6 +6,7 @@ import CourseDashboard from './views/CourseDashboard'
 import Exam from './views/Exam'
 import Certificates from './views/Certificates'
 import Library from './views/Library'
+import Lesson from './views/Lesson'
 
 function App() {
 
@@ -14,11 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing/>} />
         <Route path="/dashboard" element={<UserDashboard/>} />
-        {/* !TODO course dashboard changes dynamically based on course selected from user dashboard  
-        
-          path='/courses/:id'
-        */}
-        <Route path='/courses' element={<CourseDashboard />} />
+        <Route path='/courses/:courseId' element={<CourseDashboard />} />
+        <Route path='/courses/:courseId/:lessonSlug' element={<Lesson />} />
         {/* exam correspond to specific course  */}
         <Route path='/courses/exam' element={<Exam />} />
         <Route path='/certificates' element={<Certificates />} /> 

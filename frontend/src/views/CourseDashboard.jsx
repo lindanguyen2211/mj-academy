@@ -1,29 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import './CourseDashboard.css'
+import { useParams, Link } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
 
 const CourseDashboard = () => {
   const profile = new URL("../assets/images/profile-picture.png", import.meta.url).href
   const icon = new URL("../assets/images/pc-icon.png", import.meta.url).href
+  const { courseId } = useParams()
 
   // initialize data state and fetch data from json
-  const [data, setData] = useState([]);
+  const [course, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true)
 
-  // function to get data
-  const getData = async () => {
-    fetch("/course.json")
-      .then((res) => res.json())
-      .then((res) => setData(res));
-  };
-
-  // on load, fetch data
   useEffect(() => {
-    getData();
-  });
+    const getData = async () => {
+      try {
+        const response = await fetch("/course.json")
+        const courses = await response.json()
+        const selectedCourse = courses.find(c => c.id === courseId)
+        setCourse(selectedCourse)
+      } catch (error) {
+        console.error("Error fetching course data:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    
+    getData()
+  }, [courseId])
+
+  if (loading) return <div>Loading course...</div>
+  if (!course) return <div>Course not found</div>
+
+    // Get first lesson slug for "Begin Course" button
+    const firstLessonSlug = course.chapters[0]?.lessons[0]?.slug
 
   return (
     <section id='courses'>
-      <Sidebar data={data}/>
+      <Sidebar returnLink="dashboard" text="Dashboard"/>
       <section className='main'>
         <header>
           <div className='profile'>
@@ -36,7 +50,7 @@ const CourseDashboard = () => {
               </div>
             </div>
           </div>
-          <button>BEGIN COURSE</button>
+          <Link to={`/lessons/${courseId}/${firstLessonSlug}`} className='being-course-button'>BEGIN COURSE</Link>
         </header>
           <section className="main__section">
             <nav className="courses__nav">
@@ -52,11 +66,11 @@ const CourseDashboard = () => {
             </nav>
             <article className="main__article">
               <h2>Course Overview</h2>
-              <p>This course is designed to provide dental professionals with a comprehensive understanding of TWIM™ software and its integration into modern digital dentistry. By mastering TWIM™, participants will enhance their diagnostic precision, improve treatment planning, and elevate patient communication using 4D dynamic data.</p>
+              <p>{course.overview}</p>
               <h2>WHAT YOU WILL LEARN</h2>
-              <p>Participants will learn the fundamentals of TWIM™ software and its role in 4D Dentistry™. They will gain the skills to navigate the TWIM™ interface efficiently, ensuring they can operate the software with ease. The course will teach how to import and manage patient data securely, allowing practitioners to maintain organized records. Attendees will also learn to capture and analyze real-time jaw motion data, improving diagnosis and treatment planning. They will explore TWIM™ features such as dynamic contact analysis and mandibular sequence tracking to optimize clinical outcomes. Additionally, participants will understand how to export 4D motion data for seamless collaboration with dental labs. Lastly, the course will cover how to leverage TWIMFIT™ services for personalized treatment designs, improving patient outcomes and enhancing clinical efficiency.</p>
+              <p>{course.learningObjectives}</p>
               <h2>ASSESSMENT AND CERTIFICATION</h2>
-              <p>To ensure participants have successfully grasped the concepts and practical applications of TWIM™ software, this course concludes with a comprehensive assessment that includes a knowledge check quiz featuring multiple-choice and scenario-based questions to assess comprehension, along with a practical evaluation where participants demonstrate their ability to import data, analyze jaw motion, and export dynamic data for lab collaboration.</p>
+              <p>{course.assessmentDetails}</p>
             </article>
           </section>
         </section>

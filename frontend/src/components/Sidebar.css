@@ -4,12 +4,19 @@
     min-width: 20%;
 }
 
-.course-sidebar a {
-    color: white;
-    text-decoration: none;
+.course-sidebar-return {
     display: block;
     text-align: center;
     font-size: 1.45rem;
+}
+
+.course-sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.course-sidebar a:hover {
+    color: #C20814;
 }
 
 .course-sidebar img{
@@ -36,5 +43,5 @@
 }
 
 .completed {
-    color: green;
+    color: #C20814;
 }
