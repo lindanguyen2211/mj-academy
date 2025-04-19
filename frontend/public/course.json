@@ -1,0 +1,71 @@
+[
+    {
+        "chapter": 1,
+        "title": "Introduction to TWIM",
+        "lessons": [
+            {
+                "title": "What is 4D Dentistry?",
+                "status": true
+            },
+            {
+                "title": "Key Features",
+                "status": true
+            },
+            {
+                "title": "Create New Patient Profile",
+                "status": false
+            },
+            {
+                "title": "Uploading IOS, Face Scans and CBCT", 
+                "status": false
+            }
+        ]
+    }
+    ,{
+        "chapter": 2,
+        "title": "Capture Jaw Motion",
+        "lessons": [
+            {
+                "title": "Tips and Tricks", 
+                "status": false
+            },
+            {
+                "title": "Importance of Proper Point Picking", 
+                "status": false
+            }
+        ]
+    }
+    ,{
+        "chapter": 3,
+        "title": "Reviewing the Data",
+        "lessons": [
+            {
+                "title": "Why is recording speech important?", 
+                "status": false
+            },
+            {
+                "title": "How to read Axio Graphs", 
+                "status": false
+            },
+            {
+                "title": "How to Crop Motion Data", 
+                "status": false
+            }
+        ]
+    }
+    ,{
+        "chapter": 4,
+        "title": "Importing to CAD Software",
+        "lessons": [
+            {
+                "title": "Importing Jaw Motion to EXOCAD", 
+                "status": false
+            },
+            {
+                "title": "Importing Jaw Motion to 3Shape", 
+                "status": false
+            }
+        ]
+    }
+
+]

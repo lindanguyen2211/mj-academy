@@ -4,34 +4,6 @@
     color: white;
 }
 
-#courses aside{
-    background-color: #A8B1B8;
-    padding: 2rem;
-    min-width: 25%;
-}
-
-#courses aside a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 1.45rem;
-}
-
-#courses aside img{
-    justify-self: center;
-}
-
-.chapter-title {
-    font-weight: 700;
-    margin: .5rem 0;
-    color: black;
-}
-
-.lesson {
-    margin-left: 1rem;
-}
-
 #courses .main {
     flex-grow: 1;
 }
