@@ -101,25 +101,25 @@
         [
             {       
                 "chapter": 1,
-                "title": "placeholder",
+                "title": "placeholder-1",
                 "lessons": 
                 [
                     {
-                        "title": "placeholder?",
+                        "title": "placeholder",
                         "status": true,
-                        "slug": "placeholder"
+                        "slug": "placeholder21"
                     }
                 ]
             },
             {       
                 "chapter": 2,
-                "title": "placeholder",
+                "title": "placeholder-2",
                 "lessons": 
                 [
                     {
-                        "title": "placeholder?",
+                        "title": "placeholder",
                         "status": false,
-                        "slug": "placeholder"
+                        "slug": "placeholder22"
                     }
                 ]
             }
