@@ -26,11 +26,13 @@
     margin-left: 1rem;
     display: flex;
     align-items: center;
+    padding: .125rem 0;
 }
 
 .lesson-status {
     margin-right: .5rem;
-
+    font-size: 1.25rem;
+    align-self: start;
 }
 
 .completed {
