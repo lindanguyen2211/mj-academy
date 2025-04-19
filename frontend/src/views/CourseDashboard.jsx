@@ -50,7 +50,7 @@ const CourseDashboard = () => {
               </div>
             </div>
           </div>
-          <Link to={`/lessons/${courseId}/${firstLessonSlug}`} className='being-course-button'>BEGIN COURSE</Link>
+          <Link to={`/courses/${courseId}/${firstLessonSlug}`} className='being-course-button'>BEGIN COURSE</Link>
         </header>
           <section className="main__section">
             <nav className="courses__nav">
