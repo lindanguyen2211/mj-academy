@@ -15,8 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing/>} />
         <Route path="/dashboard" element={<UserDashboard/>} />
-        <Route path='/courses/:courseId' element={<CourseDashboard />} />
-        <Route path='/courses/:courseId/:lessonSlug' element={<Lesson />} />
+        <Route path='/courses/:courseId/' element={<CourseDashboard />} />
+        <Route path='/courses/:courseId/:chapter/:lessonSlug' element={<Lesson />} />
         {/* exam correspond to specific course  */}
         <Route path='/courses/exam' element={<Exam />} />
         <Route path='/certificates' element={<Certificates />} /> 

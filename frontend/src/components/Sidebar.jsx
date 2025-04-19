@@ -47,7 +47,7 @@ const Sidebar = (props) => {
               <IoMdCheckmarkCircleOutline 
                 className={`lesson-status ${lesson.status ? "completed" : "in-progress"}`}
               />
-              <Link to={`/courses/${courseId}/${lesson.slug}`}>
+              <Link to={`/courses/${courseId}/${chapter.chapter}/${lesson.slug}`}>
                 {`${chapter.chapter}.${lessonIndex + 1} ${lesson.title}`}
               </Link>
             </p>
