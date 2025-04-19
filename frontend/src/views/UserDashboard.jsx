@@ -1,58 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './UserDashboard.css'
 import CourseCard from '../components/CourseCard';
 
 const UserDashboard = () => {
-  // placeholder data for courses, setup to retrieve from database later
-  const courses = [
-    {
-      id: 1,
-      courseTitle: "Getting Started",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        img: new URL("../assets/images/MODJAW_Avatar-screen-1.png", import.meta.url).href,
-        progress: 100
-      },
-    {
-      id: 2,
-      courseTitle: "Introduction to 4D Dentistry",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        img: new URL("../assets/images/Modjaw-aesthetic-light-facescan-1.png", import.meta.url).href,
-        progress: 50
-      },
-    {
-      id: 3,
-      courseTitle: "Clinical Training",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        img: new URL("../assets/images/MODJAW_Twim-registration-record-1.png", import.meta.url).href,
-        progress: 0
-      },
-    {
-      id: 4,
-      courseTitle: "Lab Training",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        img: new URL("../assets/images/Modjaw-Balkwill-TWIM-1.png", import.meta.url).href,
-        progress: 0
-      },
-  ];
+  const [courses, setCourses] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await fetch("/course.json");
+        const courses = await response.json();
+        setCourses(courses);
+      } catch (error) {
+        console.error("Error fetching course data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    getData();
+  }, []);
+
+  if (loading) return <div>Loading courses..</div>;
+  if (!courses) return <div>Courses not found..</div>;
 
   return (
     <section id='user-dashboard' className='container'>
       <h1>Welcome to MODJAW&trade; Digital Academy</h1>
       <h2>Introducing 4D Dentistry to Digital Workflows</h2>
-
-      {courses.map((item) => (
-        <CourseCard
-          key={item.id}
-          title={item.courseTitle}
-          description={item.description}
-          img={item.img}
-          progress={item.progress}
-        />
-      ))}
+      <div className="course-grid">
+        {courses.map((course) => (
+          <CourseCard key={course.id} data={course} />
+        ))}
+      </div>
     </section>
   );
 };
