@@ -73,23 +73,19 @@ const Lesson = () => {
         <header className="lesson-header">
           <div className="lesson-header__left">
             <h1 className="lesson-title">
-              Chapter {lessonData.chapterNumber}.{lessonNumber}:{" "}
-              {lessonData.chapterTitle}
+              Chapter {lessonData.chapterNumber}: {lessonData.chapterTitle}
             </h1>
             <h2 className="lesson-subtitle">{lessonData.title}</h2>
           </div>
 
           <div className="lesson-header__right">
-            <Link to={`/courses/${courseId}`} className="back-to-course">
-              &lt; Back to Course
-            </Link>
             <div className="lesson-progress">
               <IoMdCheckmarkCircleOutline
                 className={`lesson-status ${
                   lessonData.status ? "completed" : "in-progress"
                 }`}
               />
-              {lessonData.status ? "COMPLETED" : "IN PROGRESS"}
+              {lessonData.status ? "COMPLETE" : "NOT COMPLETE"}
             </div>
           </div>
 
@@ -119,7 +115,7 @@ const Lesson = () => {
           <div className="lesson-navigation">
             {lessonNavigation.previous && (
               <Link
-                to={`/courses/${courseId}/${lessonNavigation.previous.slug}`}
+                to={`/courses/${courseId}/${lessonData.chapterNumber}/${lessonNavigation.previous.slug}`}
                 className="nav-button previous"
               >
                 &lt; Previous Lesson
@@ -130,7 +126,7 @@ const Lesson = () => {
 
             {lessonNavigation.next ? (
               <Link
-                to={`/courses/${courseId}/${lessonNavigation.next.slug}`}
+                to={`/courses/${courseId}/${lessonData.chapterNumber}/${lessonNavigation.next.slug}`}
                 className="nav-button next"
               >
                 Next Lesson &gt;
