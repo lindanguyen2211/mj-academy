@@ -1,174 +1,358 @@
 [
-    {
-        "id": "getting-started",
-        "courseTitle": "Getting Started",
-        "img": "images/MODJAW_Avatar-screen-1.png",
-        "overview": "This course is designed to provide dental professionals with a comprehensive understanding of TWIM™ software and its integration into modern digital dentistry. By mastering TWIM™, participants will enhance their diagnostic precision, improve treatment planning, and elevate patient communication using 4D dynamic data.",
-        "learningObjectives": "Participants will learn the fundamentals of TWIM™ software and its role in 4D Dentistry™. They will gain the skills to navigate the TWIM™ interface efficiently, ensuring they can operate the software with ease. The course will teach how to import and manage patient data securely, allowing practitioners to maintain organized records. Attendees will also learn to capture and analyze real-time jaw motion data, improving diagnosis and treatment planning. They will explore TWIM™ features such as dynamic contact analysis and mandibular sequence tracking to optimize clinical outcomes. Additionally, participants will understand how to export 4D motion data for seamless collaboration with dental labs. Lastly, the course will cover how to leverage TWIMFIT™ services for personalized treatment designs, improving patient outcomes and enhancing clinical efficiency.",
-        "assessmentDetails": "To ensure participants have successfully grasped the concepts and practical applications of TWIM™ software, this course concludes with a comprehensive assessment that includes a knowledge check quiz featuring multiple-choice and scenario-based questions to assess comprehension, along with a practical evaluation where participants demonstrate their ability to import data, analyze jaw motion, and export dynamic data for lab collaboration.",
-        "chapters": 
-        [
-            {       
-                "chapter": 1,
-                "title": "Introduction to TWIM",
-                "lessons": 
-                [
-                    {
-                        "title": "What is 4D Dentistry?",
-                        "status": true,
-                        "slug": "what-is-4d-dentistry"
-                    },
-                    {
-                        "title": "Key Features",
-                        "status": true,
-                        "slug": "key-features"
-                    },
-                    {
-                        "title": "Create New Patient Profile",
-                        "status": true,
-                        "slug": "create-new-patient-profile"
-                    },
-                    {
-                        "title": "Uploading IOS, Face Scans and CBCT", 
-                        "status": true,
-                        "slug": "uploading-ios-scans-cbct"
-                    }
+  {
+    "id": "getting-started",
+    "courseTitle": "Getting Started",
+    "img": "images/MODJAW_Avatar-screen-1.png",
+    "overview": "This course is designed to provide dental professionals with a comprehensive understanding of TWIM™ software and its integration into modern digital dentistry. By mastering TWIM™, participants will enhance their diagnostic precision, improve treatment planning, and elevate patient communication using 4D dynamic data.",
+    "learningObjectives": "Participants will learn the fundamentals of TWIM™ software and its role in 4D Dentistry™. They will gain the skills to navigate the TWIM™ interface efficiently, ensuring they can operate the software with ease. The course will teach how to import and manage patient data securely, allowing practitioners to maintain organized records. Attendees will also learn to capture and analyze real-time jaw motion data, improving diagnosis and treatment planning. They will explore TWIM™ features such as dynamic contact analysis and mandibular sequence tracking to optimize clinical outcomes. Additionally, participants will understand how to export 4D motion data for seamless collaboration with dental labs. Lastly, the course will cover how to leverage TWIMFIT™ services for personalized treatment designs, improving patient outcomes and enhancing clinical efficiency.",
+    "assessmentDetails": "To ensure participants have successfully grasped the concepts and practical applications of TWIM™ software, this course concludes with a comprehensive assessment that includes a knowledge check quiz featuring multiple-choice and scenario-based questions to assess comprehension, along with a practical evaluation where participants demonstrate their ability to import data, analyze jaw motion, and export dynamic data for lab collaboration.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "title": "Introduction to TWIM",
+        "lessons": [
+          {
+            "title": "What is 4D Dentistry?",
+            "status": true,
+            "slug": "what-is-4d-dentistry",
+            "content": [
+              {
+                "type": "text",
+                "value": "Need to Restock Your Patient Kit?"
+              },
+              {
+                "type": "text",
+                "value": "To order additional consumables such as Navex, Smil'it, headbands, or any other components, please send an email to:"
+              },
+              {
+                "type": "styledEmail",
+                "email": "supplychainteam@modjaw.com",
+                "style": "highlight-center"
+              },
+              {
+                "type": "text",
+                "value": "Be sure to include your clinic name, shipping address, and the items you'd like to reorder. Our team will assist you promptly!"
+              }
+            ]
+          },
+          {
+            "title": "What is a Navex and How to Insert It",
+            "status": true,
+            "slug": "navex",
+            "content": [
+              {
+                "type": "text",
+                "value": "The NAVEX is a key component for our device. It is a reflective marker that communicates with the MODJAW camera to help capture your patient's jaw movements."
+              },
+              {
+                "type": "list",
+                "listType": "ordered",
+                "title": "How to Insert a Navex:",
+                "items": [
+                  "Prepare the intraoral scanner",
+                  "Apply registration material to occlusal surfaces",
+                  "Guide patient through full range of motion",
+                  "Verify data capture in TWIM™ software",
+                  "Export 4D motion data for lab processing"
                 ]
-            }
-            ,{
-                "chapter": 2,
-                "title": "Capture Jaw Motion",
-                "lessons": [
-                    {
-                        "title": "Tips and Tricks", 
-                        "status": true,
-                        "slug": "capture-jaw-motion"
-                    },
-                    {
-                        "title": "Importance of Proper Point Picking", 
-                        "status": true,
-                        "slug": "importance-of-proper-pointing-picking"
-                    }
+              }
+            ]
+          },
+          {
+            "title": "Common Navex Insertion Mistakes",
+            "status": true,
+            "slug": "create-new-patient-profile",
+            "content": [
+              {
+                "type": "text",
+                "value": "Even a small misstep when inserting the NAVEX can impact tracking accuracy. In this quick module, we'll go over the three most common issues users face—and how to spot and solve them right away."
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Damaged NAVEX (Scratched or Worn Reflective Surface):",
+                "items": [
+                  "If the reflective side appears scratched or dull, the MODJAW camera won't be able to read pick up the trackers.",
+                  "Fix: Replace the NAVEX with a new one. Always check for surface quality before use.",
+                  "Recommended Replacement: On average, a NAVEX should be replaced every 50 scans, or as needed if the reflective surface shows visible wear."
                 ]
-            }
-            ,{
-                "chapter": 3,
-                "title": "Reviewing the Data",
-                "lessons": [
-                    {
-                        "title": "Why is recording speech important?", 
-                        "status": true,
-                        "slug": "recording-speech"
-                    },
-                    {
-                        "title": "How to read Axio Graphs", 
-                        "status": true,
-                        "slug": "axio-graphs"
-                    },
-                    {
-                        "title": "How to Crop Motion Data", 
-                        "status": true,
-                        "slug": "cropping-motion-data"
-                    }
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Incorrect Orientation (Placed Backward)",
+                "items": [
+                  "If the NAVEX is inserted on the wrong side or flipped backward, tracking will fail.",
+                  "Fix: Ensure the reflective surface is facing outward on the same side as the MODJAW logo on your SMIL'IT, TALLY and TIARA. "
                 ]
-            }
-            ,{
-                "chapter": 4,
-                "title": "Importing to CAD Software",
-                "lessons": [
-                    {
-                        "title": "Importing Jaw Motion to EXOCAD", 
-                        "status": true,
-                        "slug": "importing-to-exocad"
-                    },
-                    {
-                        "title": "Importing Jaw Motion to 3Shape", 
-                        "status": true,
-                        "slug": "importing-to-3shape"
-                    }
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Not Fully Clipped In (Loose Fit or Gap)",
+                "items": [
+                  "A NAVEX that isn't securely clicked into place may shift during use, affecting data quality.",
+                  "Fix: Push gently until you hear 1-2 clicks. There should be no visible gap between the NAVEX and its holder."
                 ]
-            }
+              }
+            ]
+          },
+          {
+            "title": "Preparing The Tiara",
+            "status": true,
+            "slug": "prep-the-tiara",
+            "content": [
+              {
+                "type": "text",
+                "value": "In this lesson, you'll learn how to properly assemble and fit the MODJAW Tiara, the essential support system for the frontal tracker."
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Check Orientation",
+                "items": [
+                  "Ensure the MODJAW logo is facing outward and upright. This confirms the Tiara is oriented correctly before patient placement."
+                ]
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Insert the Headband",
+                "items": [
+                  "The headband should dip downward toward the back of the patient's head.",
+                  "Gently insert the ends of the headband into the sides of the Tiara.",
+                  "Listen for a soft click'—this confirms it's securely locked in."
+                ]
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Handle with Care",
+                "items": [
+                  "The headband is fragile. When placing the Tiara on or off the patient, always hold the metal portion to avoid putting stress on the plastic connection points."
+                ]
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "title": "Adjust the Fit",
+                "items": [
+                  "Use both hands to turn the adjustment wheels at the same time, evenly expanding or tightening the band.",
+                  "Turning the wheels too far can cause the plastic headband to pop out of the grooves. Always adjust slowly and evenly."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Preparing Your Tray",
+            "status": true,
+            "slug": "prep-your-tray",
+            "content": [
+              {
+                "type": "text",
+                "value": "Think of your MODJAW setup like any patient procedure as you'll want to prep your tray with all necessary tools and materials before the patient even sits down. Having everything ready minimizes errors, keeps appointments flowing, and ensures proper device function. Please refer to the image below."
+              },
+              {
+                "type": "image",
+                "src": "/images/tray.png",
+                "alt": "Preparing your tray",
+                "meta": {
+                  "dimensions": "1920x1080",
+                  "copyright": "© MODJAW 2023"
+                }
+              }
+            ]
+          },
+          {
+            "title": "MODJAW Device Set-up",
+            "status": true,
+            "slug": "device-set-up",
+            "content": [
+              {
+                "type": "text",
+                "value": "In this lesson, you'll learn how to properly power on and position your MODJAW device before beginning any patient session. This includes best practices for plugging in the unit, handling the monitor arm, and confirming the camera is functioning with stable tracking lights. A smooth start ensures consistent data and optimal patient outcomes."
+              },
+              {
+                "type": "text",
+                "value": "Step 1: Plug the MODJAW unit into a power outlet or, preferably, a surge protector."
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "items": [
+                  "Why a surge protector? It safeguards your equipment from sudden voltage spikes and power interruptions, helping to prolong the device's lifespan and prevent hardware damage."
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Step 2: Position the Arm"
+              },
+              {
+                "type": "list",
+                "listType": "unordered",
+                "items": [
+                  "Gently rotate the monitor into position.",
+                  "Press and hold the release button on the side of the arm to unlock the motion.",
+                  "Once adjusted, release the button to lock it into place."
+                ]
+              },
+              {
+                "type": "text",
+                "value": "Step 3: Power on the computer and MODJAW camera"
+              },
+              {
+                "type": "text",
+                "value": "Step 4: Check Camera Lights"
+              },
+              {
+                "type":"list",
+                "listType":"unordered",
+                "items":[
+                    "Navigate to the back and front of the camera and check the indicator lights:",
+                    "Confirm that both front and back lights are showing solid green before proceeding to scan.",
+                    "Green Lights (Stable): Indicates the system is ready and tracking properly.",
+                    "Red Lights: Signals a problem—check cable connections, device alignment, or restart the system."
+                ]
+              },
+              {
+                "type":"text",
+                "value":"Need Assistance?"
+              },
+              {
+                "type":"text",
+                "value":"If you encounter any issues during this training module or have questions along the way, please don't hesitate to contact us at support@modjaw.com. We're here to support you every step of the way."
+              }
+            ]
+          }
         ]
-    },
-    {
-        "id": "introduction-to-4d-dentistry",
-        "courseTitle": "Introduction to 4D Dentistry",
-        "img": "images/Modjaw-aesthetic-light-facescan-1.png",
-        "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "chapters": 
-        [
-            {       
-                "chapter": 1,
-                "title": "placeholder-1",
-                "lessons": 
-                [
-                    {
-                        "title": "placeholder",
-                        "status": true,
-                        "slug": "placeholder21"
-                    }
-                ]
-            },
-            {       
-                "chapter": 2,
-                "title": "placeholder-2",
-                "lessons": 
-                [
-                    {
-                        "title": "placeholder",
-                        "status": false,
-                        "slug": "placeholder22"
-                    }
-                ]
-            }
+      },
+      {
+        "chapter": 2,
+        "title": "Capture Jaw Motion",
+        "lessons": [
+          {
+            "title": "Tips and Tricks",
+            "status": true,
+            "slug": "capture-jaw-motion"
+          },
+          {
+            "title": "Importance of Proper Point Picking",
+            "status": true,
+            "slug": "importance-of-proper-pointing-picking"
+          }
         ]
-    },
-    {
-        "id": "clinical-training",
-        "courseTitle": "Clinical Training",
-        "img": "images/MODJAW_Twim-registration-record-1.png",
-        "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "chapters": 
-        [
-            {       
-                "chapter": 1,
-                "title": "placeholder",
-                "lessons": 
-                [
-                    {
-                        "title": "placeholder?",
-                        "status": false,
-                        "slug": "placeholder"
-                    }
-                ]
-            }
+      },
+      {
+        "chapter": 3,
+        "title": "Reviewing the Data",
+        "lessons": [
+          {
+            "title": "Why is recording speech important?",
+            "status": true,
+            "slug": "recording-speech"
+          },
+          {
+            "title": "How to read Axio Graphs",
+            "status": true,
+            "slug": "axio-graphs"
+          },
+          {
+            "title": "How to Crop Motion Data",
+            "status": true,
+            "slug": "cropping-motion-data"
+          }
         ]
-    },
-    {
-        "id": "lab-training",
-        "courseTitle": "Lab Training",
-        "img": "images/Modjaw-Balkwill-TWIM-1.png",
-        "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
-        "chapters": 
-        [
-            {       
-                "chapter": 1,
-                "title": "placeholder",
-                "lessons": 
-                [
-                    {
-                        "title": "placeholder?",
-                        "status": false,
-                        "slug": "placeholder"
-                    }
-                ]
-            }
+      },
+      {
+        "chapter": 4,
+        "title": "Importing to CAD Software",
+        "lessons": [
+          {
+            "title": "Importing Jaw Motion to EXOCAD",
+            "status": true,
+            "slug": "importing-to-exocad"
+          },
+          {
+            "title": "Importing Jaw Motion to 3Shape",
+            "status": true,
+            "slug": "importing-to-3shape"
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "id": "introduction-to-4d-dentistry",
+    "courseTitle": "Introduction to 4D Dentistry",
+    "img": "images/Modjaw-aesthetic-light-facescan-1.png",
+    "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "title": "placeholder-1",
+        "lessons": [
+          {
+            "title": "placeholder",
+            "status": true,
+            "slug": "placeholder21"
+          }
+        ]
+      },
+      {
+        "chapter": 2,
+        "title": "placeholder-2",
+        "lessons": [
+          {
+            "title": "placeholder",
+            "status": false,
+            "slug": "placeholder22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clinical-training",
+    "courseTitle": "Clinical Training",
+    "img": "images/MODJAW_Twim-registration-record-1.png",
+    "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "title": "placeholder",
+        "lessons": [
+          {
+            "title": "placeholder?",
+            "status": false,
+            "slug": "placeholder"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lab-training",
+    "courseTitle": "Lab Training",
+    "img": "images/Modjaw-Balkwill-TWIM-1.png",
+    "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "learningObjectives": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "assessmentDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quasi excepturi libero veritatis atque id? Et harum cumque error.",
+    "chapters": [
+      {
+        "chapter": 1,
+        "title": "placeholder",
+        "lessons": [
+          {
+            "title": "placeholder?",
+            "status": false,
+            "slug": "placeholder"
+          }
+        ]
+      }
+    ]
+  }
 ]
