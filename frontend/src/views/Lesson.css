@@ -2,3 +2,32 @@
     display: flex;
     min-height: 100vh;
 }
+
+.lesson-container {
+    padding: 3rem;
+    flex-grow: 1;
+}
+
+.lesson-footer {
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.nav-button {
+    padding: 1.5rem 2rem;
+    background-color: #C20814;
+    display: block;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: #C20814;
+    transition: .5s ease-in;
+    border: 1px #C20814 solid ;
+}

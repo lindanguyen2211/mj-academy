@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./Lesson.css";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import Sidebar from "../components/Sidebar";
+import LessonContent from "../components/LessonContentRenderer";
 
 const Lesson = () => {
   const { courseId, lessonSlug } = useParams();
@@ -71,48 +71,18 @@ const Lesson = () => {
       <Sidebar returnLink={`courses/${courseId}`} text="Course"/>
       <div className="lesson-container">
         <header className="lesson-header">
-          <div className="lesson-header__left">
             <h1 className="lesson-title">
               Chapter {lessonData.chapterNumber}: {lessonData.chapterTitle}
             </h1>
             <h2 className="lesson-subtitle">{lessonData.title}</h2>
-          </div>
-
-          <div className="lesson-header__right">
-            <div className="lesson-progress">
-              <IoMdCheckmarkCircleOutline
-                className={`lesson-status ${
-                  lessonData.status ? "completed" : "in-progress"
-                }`}
-              />
-              {lessonData.status ? "COMPLETE" : "NOT COMPLETE"}
-            </div>
-          </div>
-
         </header>
 
         <main className="lesson-content">
           {/* Add actual lesson content here */}
-          <div className="lesson-body">
-            <p>This is where your lesson content would be displayed.</p>
-            <p>For this example, we'll show lesson metadata:</p>
-
-            <div className="lesson-info-card">
-              <h3>Lesson Details</h3>
-              <ul>
-                <li>Course ID: {courseId}</li>
-                <li>Lesson Slug: {lessonSlug}</li>
-                <li>Chapter: {lessonData.chapterNumber}</li>
-                <li>
-                  Status: {lessonData.status ? "Completed" : "In Progress"}
-                </li>
-              </ul>
-            </div>
-          </div>
+          <LessonContent content={lessonData["content"]}/>
         </main>
 
         <footer className="lesson-footer">
-          <div className="lesson-navigation">
             {lessonNavigation.previous && (
               <Link
                 to={`/courses/${courseId}/${lessonData.chapterNumber}/${lessonNavigation.previous.slug}`}
@@ -136,7 +106,6 @@ const Lesson = () => {
                 Complete Course
               </Link>
             )}
-          </div>
         </footer>
       </div>
     </section>

@@ -1,0 +1,10 @@
+.styled-email {
+    text-align: center;
+    margin: 1.25rem;
+}
+
+.styled-email a {
+    color: #C20814;
+    text-decoration: none;
+    font-weight: 700;
+}
