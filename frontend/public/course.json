@@ -17,6 +17,12 @@
             "slug": "what-is-4d-dentistry",
             "content": [
               {
+                "type": "video",
+                "source": "youtube",
+                "id": "haYuLCr2Nlc",
+                "caption": "Patient Kit"
+              },
+              {
                 "type": "text",
                 "value": "Need to Restock Your Patient Kit?"
               },
@@ -41,6 +47,12 @@
             "slug": "navex",
             "content": [
               {
+                "type": "video",
+                "source": "youtube",
+                "id": "KpdNfJ16qxI",
+                "caption": "Navex and How to insert it"
+              },
+              {
                 "type": "text",
                 "value": "The NAVEX is a key component for our device. It is a reflective marker that communicates with the MODJAW camera to help capture your patient's jaw movements."
               },
@@ -63,6 +75,12 @@
             "status": true,
             "slug": "create-new-patient-profile",
             "content": [
+              {
+                "type": "video",
+                "source": "youtube",
+                "id": "A5dIWOZj4X4",
+                "caption": "Common Mistakes"
+              },
               {
                 "type": "text",
                 "value": "Even a small misstep when inserting the NAVEX can impact tracking accuracy. In this quick module, we'll go over the three most common issues users face—and how to spot and solve them right away."
@@ -102,6 +120,12 @@
             "status": true,
             "slug": "prep-the-tiara",
             "content": [
+              {
+                "type": "video",
+                "source": "youtube",
+                "id": "jx8WeGR3XYw",
+                "caption": "Prepping the Tiara"
+              },
               {
                 "type": "text",
                 "value": "In this lesson, you'll learn how to properly assemble and fit the MODJAW Tiara, the essential support system for the frontal tracker."
@@ -169,6 +193,12 @@
             "slug": "device-set-up",
             "content": [
               {
+                "type": "video",
+                "source": "youtube",
+                "id": "wdTggYbjKi4",
+                "caption": "Device Setup"
+              },
+              {
                 "type": "text",
                 "value": "In this lesson, you'll learn how to properly power on and position your MODJAW device before beginning any patient session. This includes best practices for plugging in the unit, handling the monitor arm, and confirming the camera is functioning with stable tracking lights. A smooth start ensures consistent data and optimal patient outcomes."
               },
@@ -205,22 +235,58 @@
                 "value": "Step 4: Check Camera Lights"
               },
               {
-                "type":"list",
-                "listType":"unordered",
-                "items":[
-                    "Navigate to the back and front of the camera and check the indicator lights:",
-                    "Confirm that both front and back lights are showing solid green before proceeding to scan.",
-                    "Green Lights (Stable): Indicates the system is ready and tracking properly.",
-                    "Red Lights: Signals a problem—check cable connections, device alignment, or restart the system."
+                "type": "list",
+                "listType": "unordered",
+                "items": [
+                  "Navigate to the back and front of the camera and check the indicator lights:",
+                  "Confirm that both front and back lights are showing solid green before proceeding to scan.",
+                  "Green Lights (Stable): Indicates the system is ready and tracking properly.",
+                  "Red Lights: Signals a problem—check cable connections, device alignment, or restart the system."
                 ]
               },
               {
-                "type":"text",
-                "value":"Need Assistance?"
+                "type": "text",
+                "value": "Need Assistance?"
               },
               {
-                "type":"text",
-                "value":"If you encounter any issues during this training module or have questions along the way, please don't hesitate to contact us at support@modjaw.com. We're here to support you every step of the way."
+                "type": "text",
+                "value": "If you encounter any issues during this training module or have questions along the way, please don't hesitate to contact us at support@modjaw.com. We're here to support you every step of the way."
+              }
+            ]
+          },
+          {
+            "title": "TWIM Software Set-up",
+            "status": true,
+            "slug": "twim-software-set-up",
+            "content": [
+              {
+                "type": "text",
+                "value": "TWIM is the proprietary software that brings your MODJAW data to life. Designed to integrate seamlessly with your digital workflow, TWIM captures, visualizes, and analyzes 4D jaw motion data in real-time. This software is where the dynamic digital twin of your patient is created, allowing you to assess functional occlusion, record movements, and merge your dynamic data with intraoral scans and CBCTs. From diagnostics to treatment planning, TWIM gives you a smarter, more personalized way to communicate with patients and collaborate across your team."
+              },
+              {
+                "type": "video",
+                "source": "youtube",
+                "id": "UUSa5g6KHHk",
+                "caption": "software setup"
+              },
+              {
+                "type": "text",
+                "value": "Follow these quick steps to get set up and logged into your TWIM™ account:"
+              },
+              {
+                "type": "list",
+                "listType": "ordered",
+                "items": [
+                  "Connect your computer to a secure WiFi or network connection.",
+                  "Open the TWIM™ Software application.",
+                  "Create an account by entering your name, email, and a secure password. Your password must include at least 6 characters and 2 special characters (e.g., !, @, #, $, etc.).",
+                  "Sign in using the email and password you registered with."
+                ]
+              },
+              {
+                "type": "download",
+                "url": "/TWIM-USERMANUAL.pdf",
+                "fileName": "TWIM User Manual"
               }
             ]
           }
