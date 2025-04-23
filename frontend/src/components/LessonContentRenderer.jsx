@@ -1,6 +1,7 @@
 import StyledEmail from "./StyledEmail";
 import List from "./List";
 import Image from "./Image";
+import './LessonContentRenderer.css'
 
 const LessonContent = ({ content }) => {
   console.log(content);
@@ -25,6 +26,7 @@ const LessonContent = ({ content }) => {
                   src={`https://www.youtube.com/embed/${item.id}`}
                   title="YouTube video player"
                   allowFullScreen
+                  className="video-iframe"
                 />
               </div>
             );
@@ -34,6 +36,9 @@ const LessonContent = ({ content }) => {
 
           case "list":
             return <List key={index} {...item} />;
+
+          case "download":
+            return <a href={`${item.url}`} download className="button">Download {item.fileName}</a>
 
           default:
             return null;

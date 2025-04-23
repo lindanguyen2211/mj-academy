@@ -1,0 +1,30 @@
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust maximum width as needed */
+    margin: 2rem auto;
+}
+
+.video-iframe {
+    height: 450px;
+    width: 100%;
+}
+
+.button {
+    padding: 1.5rem 2rem;
+    background-color: #C20814;
+    display: block;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: white;
+    color: #C20814;
+    transition: .5s ease-in;
+    border: 1px #C20814 solid ;
+}
