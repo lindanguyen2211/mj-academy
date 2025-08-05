@@ -10,37 +10,39 @@ import { Link } from 'react-router-dom'
 import "./Sidebar.css"
 
 const Sidebar = () => {
-  return (
-    <div className='sidebar-container'>
-        <div className="top">
-            <a href="">
-                <img src={modjawLogo} alt="Modjaw Logo" className='modjaw-logo icons' />
-            </a>
-            <Link to="/dashboard">
-                <img src={homeIcon} alt="Home Icon" className='icons'/>
-            </Link>
-            <Link to="/dashboard">
-                <img src={readingIcon} alt="Courses" className='icons' />
-            </Link>
-            <Link to="/dashboard">
-                <img src={messageIcon} alt="Messages" className='icons' />
-            </Link>
-            <a href="">
-                <img src={sphereIcon} alt="Sphere Logo" className='icons'/>
-            </a>
+    return (
+        <div className='sidebar-container'>
+            <div className="top">
+                <a href="https://modjaw.com/en" aria-label="Modjaw - ALL in One Solution" target="_blank">
+                    <img src={modjawLogo} alt="Modjaw Logo" className='modjaw-logo icons' />
+                </a>
+                <Link to="/dashboard">
+                    <img src={homeIcon} alt="Home Icon" className='icons' />
+                </Link>
+                <Link to="/dashboard">
+                    <img src={readingIcon} alt="Courses" className='icons' />
+                </Link>
+                <Link to="/dashboard">
+                    <img src={messageIcon} alt="Messages" className='icons' />
+                </Link>
+                <a href="https://modjaw-preprod-sphere.com/login" aria-label="Sphere Platform" target="_blank">
+                    <img src={sphereIcon} alt="Sphere Logo" className='icons' />
+                </a>
+            </div>
+            <div className="bottom">
+                {/* pop up to change default language */}
+                <img src={usaFlag} alt="Change Language" className='icons' />
+                <Link to="/dashboard">
+                    <img src={profileIcon} alt="User Profile" className='icons' />
+                </Link>
+                <Link to="/">
+                    <button className="signout-btn">
+                        Sign Out
+                    </button>
+                </Link>
+            </div>
         </div>
-        <div className="bottom">
-            {/* pop up to change default language */}
-            <img src={usaFlag} alt="Change Language" className='icons'/>
-            <Link to="/dashboard">
-                <img src={profileIcon} alt="User Profile" className='icons' />
-            </Link>
-            <button className="signout-btn">
-                Sign Out
-            </button>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Sidebar
