@@ -1,10 +1,15 @@
-import React from 'react'
-import "./Dashboard.css"
+import React from "react";
+import "./Dashboard.css";
+import ProfileSection from "../components/ProfileSection";
+import Modules from "../components/Modules";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <>
+      <ProfileSection />
+      <Modules />
+    </>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
