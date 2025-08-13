@@ -5,10 +5,10 @@ import Modules from "../components/Modules";
 
 const Dashboard = () => {
   return (
-    <>
+    <section id="Dashboard">
       <ProfileSection />
       <Modules />
-    </>
+    </section>
   );
 };
 

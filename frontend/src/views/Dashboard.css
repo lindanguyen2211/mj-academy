@@ -1,0 +1,5 @@
+#Dashboard {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    height: auto;
+}

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./ProfileSection.css";
 import { IoMdSearch } from "react-icons/io";
 import { IoNotificationsOutline } from "react-icons/io5";
+import banner from "../assets/images/banner.png";
+import badge from "../assets/images/level 1 badge 1.png";
+import tempProfileImage from "../assets/images/temp_profileImage.jpg"
 
 const ProfileSection = () => {
   let user = "Linda Nguyen";
@@ -11,7 +14,7 @@ const ProfileSection = () => {
     console.log(`Searching for ${searchTerm}`);
   };
   return (
-    <section id="user_DashboardProfile">
+    <article id="Dashboard_userProfile">
       <div className="top-bar">
         <h1>Welcome back, {user}</h1>
         <div className="row">
@@ -29,10 +32,30 @@ const ProfileSection = () => {
               <IoMdSearch />
             </button>
           </form>
-          <IoNotificationsOutline className="notifications"/>
+          <IoNotificationsOutline className="notifications" />
         </div>
       </div>
-    </section>
+      <div className="profile-hero">
+        <div className="banner">
+          <img src={banner} alt="profile banner" />
+        </div>
+        <div className="profile">
+          <div className="profile_imgWrapper">
+            <img src={tempProfileImage} alt="" className="profile_img" />
+            <img src={badge} alt="" className="badge" />
+          </div>
+          <div className="location">
+            <h1>MJ DENTAL LAB</h1>
+            <p>JUPITER, FLORIDA, USA</p>
+          </div>
+          <div className="course-progress">
+            <p>
+              <strong>LAST ACTIVITY: </strong> MODULE 2 - SPLINT WORKFLOW
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
   );
 };
 
