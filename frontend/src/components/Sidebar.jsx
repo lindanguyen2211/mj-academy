@@ -1,36 +1,48 @@
-import React from 'react'
-import modjawLogo from '../assets/images/mj.png'
-import homeIcon from '../assets/images/home.png'
-import readingIcon from '../assets/images/learn.png'
-import messageIcon from '../assets/images/messages.png'
-import sphereIcon from '../assets/images/sphere-icon.png'
-import usaFlag from '../assets/images/usa.png'
-import profileIcon from '../assets/images/profile.png'
-import { Link } from 'react-router-dom'
-import "./Sidebar.css"
+import React from "react";
+import modjawLogo from "../assets/images/mj.png";
+import homeIcon from "../assets/images/home.png";
+import readingIcon from "../assets/images/learn.png";
+import messageIcon from "../assets/images/messages.png";
+import sphereIcon from "../assets/images/sphere-icon.png";
+import usaFlag from "../assets/images/usa.png";
+import profileIcon from "../assets/images/profile.png";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
-    return (
-        <div className='sidebar-container'>
-            <div className="top">
-                <a href="https://modjaw.com/en" aria-label="Modjaw - ALL in One Solution" target="_blank">
-                    <img src={modjawLogo} alt="Modjaw Logo" className='modjaw-logo icons' />
-                </a>
-                <Link to="/dashboard">
-                    <img src={homeIcon} alt="Home Icon" className='icons' />
-                </Link>
-                <Link to="/dashboard">
-                    <img src={readingIcon} alt="Courses" className='icons' />
-                </Link>
-                <Link to="/dashboard">
-                    <img src={messageIcon} alt="Messages" className='icons' />
-                </Link>
-                <a href="https://modjaw-preprod-sphere.com/login" aria-label="Sphere Platform" target="_blank">
-                    <img src={sphereIcon} alt="Sphere Logo" className='icons' />
-                </a>
-            </div>
-            <div className="bottom">
-                {/* pop up to change default language */}
+  return (
+    <div className="sidebar-container">
+      <div className="top">
+        <a
+          href="https://modjaw.com/en"
+          aria-label="Modjaw - ALL in One Solution"
+          target="_blank"
+        >
+          <img
+            src={modjawLogo}
+            alt="Modjaw Logo"
+            className="modjaw-logo icons"
+          />
+        </a>
+        <Link to="/dashboard">
+          <img src={homeIcon} alt="Home Icon" className="icons" />
+        </Link>
+        <Link to="/dashboard">
+          <img src={readingIcon} alt="Courses" className="icons" />
+        </Link>
+        <Link to="/dashboard">
+          <img src={messageIcon} alt="Messages" className="icons" />
+        </Link>
+        <a
+          href="https://modjaw-preprod-sphere.com/login"
+          aria-label="Sphere Platform"
+          target="_blank"
+        >
+          <img src={sphereIcon} alt="Sphere Logo" className="icons" />
+        </a>
+      </div>
+      <div className="bottom">
+        {/* pop up to change default language */}
         <svg
           width="50"
           height="50"
@@ -59,17 +71,15 @@ const Sidebar = () => {
             </clipPath>
           </defs>
         </svg>
-                <Link to="/dashboard">
-                    <img src={profileIcon} alt="User Profile" className='icons' />
-                </Link>
-                <Link to="/">
-                    <button className="signout-btn">
-                        Sign Out
-                    </button>
-                </Link>
-            </div>
-        </div>
-    )
-}
+        <Link to="/dashboard">
+          <img src={profileIcon} alt="User Profile" className="icons" />
+        </Link>
+        <Link to="/">
+          <button className="signout-btn">Sign Out</button>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default Sidebar
+export default Sidebar;
